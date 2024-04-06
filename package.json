@@ -1,0 +1,48 @@
+{
+  "name": "@lukethacoder/lwrjs-lwc-module-provider",
+  "description": "⚡ An opinionated edit to the @lwrjs/lwc-module-provider package to add support for namespaces and multi directory modules (via @lukethacoder/lwc-module-resolver)",
+  "version": "0.12.2",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/lukethacoder/lwrjs-lwc-module-provider",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukethacoder/lwrjs-lwc-module-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lukethacoder/lwrjs-lwc-module-provider/issues"
+  },
+  "type": "module",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src/**/*.js",
+    "src/**/*.cjs",
+    "src/**/*.d.ts"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-typescript": "^7.24.1",
+    "@lwrjs/diagnostics": "0.12.2",
+    "@lwrjs/fs-watch": "0.12.2",
+    "@lwrjs/shared-utils": "0.12.2",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@lwrjs/types": "0.12.2",
+    "typescript": "^5.4.4"
+  },
+  "peerDependencies": {
+    "@lwc/compiler": ">= 2.x",
+    "@lukethacoder/lwc-module-resolver": ">= 6.x"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
