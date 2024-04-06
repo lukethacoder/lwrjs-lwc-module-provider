@@ -18,7 +18,7 @@ Edit your `lwr.config.json` file to include the module.
   "moduleProviders": [
     "@lwrjs/label-module-provider",
     "@lwrjs/app-service/moduleProvider",
-    "@lukethacoder/lwc-module-provider",
+    "@lukethacoder/lwrjs-lwc-module-provider",
     "@lwrjs/npm-module-provider"
   ],
   "routes": []
